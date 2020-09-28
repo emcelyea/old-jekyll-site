@@ -15,14 +15,11 @@ $color-text-light: #828282;
 body {
 	background: $color-bg;
 
-	.site-footer {
-		background: $color-text;
-		padding: 8px 0;
-
-		.footer-col {
-			margin-bottom: 0;
-
-		}
+	.site-header {
+		border-top: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 
 	a {
@@ -34,21 +31,43 @@ body {
 	}
 }
 
+.header-wrapper {
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px solid white;
+}
 .site-header {
-	background: $color-text;
+	border-bottom: none;
+	max-width: calc(800px - (30px * 2));
+	padding: 0 30px;
+	width: 100%;
 
+	.social-media-list {
+		display: flex;
+		align-items: center;
+		margin-bottom: 0;
 
-	a.site-title, .site-nav a {
-		color: #fff;
-		font-weight: 400;
-		letter-spacing: .5px;
+		li {
+			margin-right: 16px;
 
-		&::visited {
-			color: #fff;
+			.svg-icon {
+				padding-right: 2px;
+			}
 		}
+	}
+	.social-media-list li + li {
+		padding-top: 0;
 	}
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+.u-email {
+	margin-right: 16px;
+	width: 16px;
+	svg {
+		fill: #828282;
+	}
+}
+
+a, p, h1, h2, h3, h4, h5, h6 {
 	color: $color-text;
 }
