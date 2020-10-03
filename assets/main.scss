@@ -71,3 +71,10 @@ body {
 a, p, h1, h2, h3, h4, h5, h6 {
 	color: $color-text;
 }
+
+// shift title over on mobile
+@media (max-width: 600px) {
+  .site-title {
+	margin-right: 40px;
+  }
+}
