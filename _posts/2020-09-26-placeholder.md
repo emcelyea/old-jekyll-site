@@ -2,7 +2,7 @@
 layout: post
 title:  Placeholder
 date:   2020-09-26 08:12:01 -0700
-categories: Philosophy, writing, stuff
+categories: Placeholder
 ---
 Placeholder
 Jekyll requires blog post files to be named according to the following format:
